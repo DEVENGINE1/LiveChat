@@ -32,7 +32,7 @@ class MessageSent
      */
     public function broadcastOn(): array
     {
-        return ['chat' ]; // public channel
+        return new Channel('chat'); // public channel
     }
     
     // Optional: custom event name to match Next.js listener
